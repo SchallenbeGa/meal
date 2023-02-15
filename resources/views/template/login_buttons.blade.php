@@ -19,7 +19,7 @@
       <div class="col mb-3">
         <a href="/redirect/google" class="btn btn-icon btn-secondary btn-google btn-lg w-100">
           <i class="bx bxl-google fs-xl me-2"></i>
-          Google
+          Google (use this for demo)
         </a>
       </div>
       <div class="col mb-3">
