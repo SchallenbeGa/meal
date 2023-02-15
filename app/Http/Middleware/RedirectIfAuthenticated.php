@@ -30,7 +30,7 @@ class RedirectIfAuthenticated
                     return redirect()->route('mailbox');
                 }
                 elseif (Auth::user()->control_id == 2){
-                    return redirect()->route('admin_home');
+                    return redirect()->route('gestion');
                 }
             }
         }
