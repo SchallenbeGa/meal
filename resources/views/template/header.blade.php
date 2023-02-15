@@ -18,7 +18,7 @@ $user = Auth::user();
   @isset($description)
   <meta name="description" content="{{ $description }}">
   @else
-  <meta name="description" content="LessTax est une plateforme qui vous permet de trouver un job en un clic !">
+  <meta name="description" content="LessTax est une plateforme pour gagner en efficacité avec moins qu'un clic !">
   @endisset
   <link sizes="180x180" href="{{ asset('img/favicon.png') }}">
   <script src="../assets/bootstrap.bundle.min.js"></script>
