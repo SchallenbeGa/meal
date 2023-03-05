@@ -15,17 +15,7 @@
                             <small class="text-muted">Stocké le {{$sdocument->created_at}}</small>
                             <h5 class="card-title">Titre du fichier pour {{$sdocument->title}}</h5>
                             <div class="d-flex justify-content-between">
-                                <form action="{{route('sdocument.edit.show')}}" class="d-flex" method="POST">
-                                    @csrf
-                                    @method('POST')
-                                    <input type="hidden" name="id_sdocument" value="{{$sdocument->id}}" />
-                                    <button type="submit" class="btn btn-sm btn-secondary d-flex"><i class='bx bx-edit'></i>Visualiser</button>
-                                </form>
-                                <form action="/sdocument/delete/{{$sdocument->id}}" class="d-flex" method="POST">
-                                    @csrf
-                                    @method('POST')
-                                    <button type="submit" class="btn btn-sm btn-danger d-flex" style="width:160px"><i class='bx bx-trash'></i>Effacer</button>
-                                </form>
+                               
                             </div>
                         </div>
                     </div>

@@ -13,10 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('groups_users', function (Blueprint $table) {
-            $table->id();
-            $table->integer('user_id');
-            $table->integer('group_id');
+        Schema::create('ingredients', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('name');
+            $table->string('description');
+            $table->string('calorie');
+            $table->string('cost');
             $table->timestamps();
         });
     }
@@ -28,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('groups_users');
+        Schema::dropIfExists('ingredients');
     }
 };

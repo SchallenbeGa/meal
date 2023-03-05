@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Conseiller;
 
 use App\Http\Controllers\Controller;
-use App\Models\SDocument;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Redirect;
@@ -44,18 +43,9 @@ class CController extends Controller
     }
 
 
-    public function sdocument()
-    {
-        $user = Auth::user();
-        $sdocuments = SDocument::where('user_id', Auth::id())->orderBy('created_at', 'desc')->get();
-        return HTMLMin::blade(view('user.sdocument_history', compact('sdocuments')));
-    }
+    
 
-    public function deleteSDocument(SDocument $sdocument)
-    {
-        $sdocument->delete();
-        return back()->with('status', 'Lettre supprimée avec succès !');
-    }
+  
     // Mise à jour du job actuel de l'utilisateur
     public function updateCareer(Request $request)
     {
@@ -295,14 +285,7 @@ class CController extends Controller
                 ]
             ); 
 
-            if($request->headers->has('referer')){
-                $referer = $request->header('referer');
-                if($referer = 'want_generate'){
-                    return redirect()->route('sdocument_generator')->with('success', 'Postulation ajoutée avec succès !');
-                }
-            }else{
-                return redirect()->route('wanted_job.list')->with('success', 'Entreprise ajoutée/modifiée avec succès !');
-            }
+           
 
 
            

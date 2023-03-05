@@ -13,11 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('s_documents', function (Blueprint $table) {
-            $table->id();
-            $table->integer('user_id');
-            $table->string('title');
-            $table->string('path');
+        Schema::create('allergies', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('name');
+            $table->longText('ingredient');
+            $table->unsignedBigInteger('user_id')->nullable();
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sdocuments');
+        Schema::dropIfExists('allergies');
     }
 };

@@ -64,24 +64,6 @@ $user = Auth::user();
           </div>
         </a>
         <ul class="dropdown-menu dropdown-menu-end my-1" style="width: 14rem;">
-         @if (Auth::user()->control_id == 0)
-        <li>
-            <a href="{{ route('profil') }}" class="dropdown-item d-flex align-items-center">
-              <i class="bx bx-user-circle fs-base opacity-60 me-2"></i>
-              Compte
-            </a>
-          </li>
-         
-          <hr>
-          <li>
-            <a href="{{route('billing')}}" class="dropdown-item d-flex align-items-center">
-              <i class="bx bx-receipt fs-base opacity-60 me-2"></i>
-              Factures ?
-              <span class="badge bg-faded-info text-info ms-2"></span>
-            </a>
-          </li>
-          @endif
-          <li class="dropdown-divider"></li>
           <li>
             <button class="dropdown-item d-flex align-items-center" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
               <i class="bx bx-log-out fs-base opacity-60 me-2"></i>
@@ -108,7 +90,7 @@ $user = Auth::user();
       <nav id="navbarCollapse2" class="collapse navbar-collapse">
         <hr class="d-lg-none mt-3 mb-2">
         <ul class="navbar-nav me-auto">
-          <li><a href="{{route('blog')}}" class="nav-link ">Blog</a></li>
+        
         </ul>
         @guest
         @if (Route::has('login'))

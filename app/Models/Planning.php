@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
   
-class SDocument extends Model
+class Planning extends Model
 {
     use HasFactory;
   
@@ -17,8 +17,7 @@ class SDocument extends Model
      */
     protected $fillable = [
         'user_id',
-        'title',
-        'path',
+        'plan'
     ];
   
     /**

@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\Article;
 use App\Models\Comment;
-use App\Models\SDocument;
 use App\Models\Like;
 use App\Models\SessionRecording;
 use App\Models\Subscription;
@@ -75,7 +74,6 @@ class SessionController extends Controller
         $article_count = Article::all()->count();
         $guest_count = 0;
         $session_count = 0;
-        $sdocument_count = SDocument::all()->count();
         $stato = [];
   
         $ladata = [];
@@ -106,7 +104,6 @@ class SessionController extends Controller
         $stato[] = $user_count; 
         $stato[] = $user_today;
         $stato[] = $guest_count;
-        $stato[] = $sdocument_count;
         $ladata = array_filter($ladata);
         $stato[] = count($ladata);
         $stato[] = $user_diff;

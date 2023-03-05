@@ -15,12 +15,12 @@
           <a href="{{route('mailbox')}}" class="list-group-item list-group-item-action d-flex align-items-center {{ Route::is('mailbox') ? 'active' : '' }}">
             <i class="bx bx-mail fs-xl opacity-60 me-2"></i>
             Boîte de réception
-            <span class="badge bg-faded-success text-success ms-2">{{count(App\Models\SDocument::where('user_id', Auth::id())->get())}}</span>
+            <span class="badge bg-faded-success text-success ms-2"></span>
           </a>
           <a href="{{route('tasks')}}" class="list-group-item list-group-item-action d-flex align-items-center {{ Route::is('tasks') ? 'active' : '' }}">
             <i class="bx bx-mail fs-xl opacity-60 me-2"></i>
             Dossier(s) en cours
-            <span class="badge bg-faded-success text-success ms-2">{{count(App\Models\SDocument::where('user_id', Auth::id())->get())}}</span>
+            <span class="badge bg-faded-success text-success ms-2"></span>
           </a>
         </div>
       </div>

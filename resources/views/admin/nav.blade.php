@@ -15,10 +15,6 @@
             <i class="bx bx-cog fs-xl opacity-60 me-2"></i>
             HeatMap
           </a>
-          <a href="{{route('gestion')}}" class="list-group-item list-group-item-action d-flex align-items-center {{ Route::is('gestion') ? 'active' : '' }}">
-            <i class="bx bx-list-ul fs-xl opacity-60 me-2"></i>
-            Conseiller(s) & Group(s)
-          </a>
           <a href="{{route('blog_edit')}}" class="list-group-item list-group-item-action d-flex align-items-center {{ Route::is('blog_edit') ? 'active' : '' }}">
             <i class="bx bx-edit fs-xl opacity-60 me-2"></i>
             Blog

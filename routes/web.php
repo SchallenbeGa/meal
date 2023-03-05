@@ -70,9 +70,10 @@ Route::middleware("auth")->group(function () {
 
     Route::post('/blog/article/{id_article}/comment', [App\Http\Controllers\Blog\BlogController::class, 'comment']);
     Route::get('/blog/article/{id_article}/like', [App\Http\Controllers\Blog\BlogController::class, 'like']);
-
+    Route::get('/setup', [ProfilController::class, 'setup1'])->name('setup1');
     Route::get('/profil/tools', [ProfilController::class, 'showTools'])->name('tools');
-    
+    Route::get('/planning', [App\Http\Controllers\PlanningController::class, 'show_planning'])->name('planning');
+    Route::get('/meal', [App\Http\Controllers\MealController::class, 'show_meal'])->name('meal');
     Route::get('/heat', [App\Http\Controllers\SessionController::class, 'show_heatmap'])->name('heat');
     Route::get('/replay', [App\Http\Controllers\SessionController::class, 'show_replay'])->name('replay');
     Route::get('/heat/{id_heat}', [App\Http\Controllers\SessionController::class, 'heat']);
@@ -81,6 +82,10 @@ Route::middleware("auth")->group(function () {
 
     Route::get('/profil', [ProfilController::class, 'Profil'])->name('profil');
     Route::post('/profil/update', [ProfilController::class, 'updateProfil'])->name('update.profil');
+    Route::post('/rmr', [ProfilController::class, 'setup1'])->name('setup1');
+    Route::post('/info', [ProfilController::class, 'setup2'])->name('setup2');
+    Route::post('/goal', [ProfilController::class, 'setup3'])->name('setup3');
+    Route::post('/allergie', [ProfilController::class, 'setup4'])->name('setup4');
     Route::post('/profil/update/picture', [ProfilController::class, 'updateProfilePicture'])->name('update.profil.picture');
 
     // Billing and get invoice  
@@ -96,13 +101,7 @@ Route::middleware("auth")->group(function () {
     Route::get('/mailbox', [CController::class, 'mailbox'])->name('mailbox');
     Route::get('/tasks', [CController::class, 'tasks'])->name('tasks');
 
-    Route::get('/sdocument/history', [ProfilController::class, 'sdocument'])->name('sdocument.history');
-    Route::get("/sdocument/generator", [GPT3Controller::class, "index"])->name("sdocument_generator");
-    Route::post('/sdocument/delete/{sdocument}', [ProfilController::class, 'deleteSDocument'])->name('sdocument.delete');
-    Route::post("/sdocument/upload", [ProfilController::class, "showUploadFile"])->name("upload.sdocument");
-    Route::post("/sdocument/editor", [GPT3Controller::class, "showEditor"])->name("sdocument.edit.show");
-    Route::post("/sdocument/editor/save", [GPT3Controller::class, "update_sdocument"])->name("sdocument.edit.save");
-
+   
     Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
     Route::post('destroy', [ProfilController::class, 'destroy'])->name('delete_account');
     Route::post('/profil/cancel-subscription', [ProfilController::class, 'cancelPlan'])->name('plan.cancel');
