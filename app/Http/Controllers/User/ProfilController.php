@@ -98,27 +98,24 @@ class ProfilController extends Controller
         return HTMLMin::blade(view('user.situation',compact('declarations')));
     }
     // setup 1
-    public function setup1(Request $request)
+    public function setup1()
     {
-        $user = User::findOrFail($request->user_id);
-        // return the view with updated data
         return HTMLMin::blade(view('user.setup1'));
     }
     // setup 2
-    public function setup2(Request $request)
+    public function setup2()
     {
-        $user = User::findOrFail($request->user_id);
-        // return the view with updated data
         return HTMLMin::blade(view('user.setup2'));
     }
     // setup 3
-    public function setup3(Request $request)
+    public function setup3()
     {
-        $user = User::findOrFail($request->user_id);
-        // return the view with updated data
         return HTMLMin::blade(view('user.setup3'));
     }
-    
+    public function allergie()
+    {
+        return HTMLMin::blade(view('user.allergie'));
+    }
 
 
 

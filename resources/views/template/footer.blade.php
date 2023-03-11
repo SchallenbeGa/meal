@@ -1,47 +1,80 @@
 
-     
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
 
-      <!-- Footer -->
-      <footer class="footer bg-secondary pb-lg-5" style="background-color:#F1F1F1 !important">
-      <div class="container text-center pt-lg-3">
-        <div class="navbar-brand justify-content-center text-dark mb-2 mb-lg-4">
-          LessTax
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div>
+            <h4>Address</h4>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022 - US<br>
+            </p>
+          </div>
+
         </div>
-        <p class="nav d-block fs-sm text-center mb-0">
-          <span class="opacity-50">&copy; Tout droit réservé</span>
-          <p class="opacity-50 d-inline-block"> Made with love in Switzerland</p>
-        </p>
 
-          <h6 class="mb-2">
-            <a href="#useful-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Liens utile</a>
-          </h6>
-          <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
-            <ul class="nav flex-column mb-2 mb-lg-0">
-              <li class="nav-item"><a href="/conditions" class="nav-link d-inline-block px-0 pt-1">Conditions d'utilisations</a></li>
-            </ul>
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Reservations</h4>
+            <p>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
           </div>
         </div>
-        <div class="col-xl-4 col-lg-3">
-          <!--
-          <h6 class="mb-2">
-            <a href="#social-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Socials</a>
-          </h6>
-          <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
-            <ul class="nav flex-column mb-2 mb-lg-0">
-              <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Facebook</a></li>
-              <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a></li>
-              <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Twitter</a></li>
-              <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Behance</a></li>
-            </ul>
-          -->
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Opening Hours</h4>
+            <p>
+              <strong>Mon-Sat: 11AM</strong> - 23PM<br>
+              Sunday: Closed
+            </p>
           </div>
         </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
       </div>
     </div>
-  </div>
-</div>
-</div>  
-</footer>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Gourmandise</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+      
+        Designed by 
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/aos.js"></script>
+  <script src="../js/glightbox.min.js"></script>
+  <script src="../js/purecounter_vanilla.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <!-- Template Main JS File -->
+  <script src="../js/main.js"></script>
 <script src="{{ mix('js/app.min.js') }}" defer></script>
 </body>
 </html>

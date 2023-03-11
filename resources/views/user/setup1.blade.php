@@ -50,8 +50,8 @@
                   </div>
                 </div>
                   <div class="d-flex mb-3">
-                    <button type="reset" class="btn btn-secondary me-3">Retour</button>
-                    <button type="submit" class="btn btn-secondary">Suivant Demo</button>
+                    <a href="{{route('profil')}}" class="btn btn-secondary me-3">Retour</a>
+                    <a href="{{route('setup2')}}" class="btn btn-secondary">Suivant Demo</a>
                   </div>
               </form>
 

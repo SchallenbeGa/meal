@@ -12,7 +12,7 @@ $user = Auth::user();
   @isset($title)
   <title>{{ $title }}</title>
   @else
-  <title>LessTax</title>
+  <title>Gourmand</title>
   @endisset
   <!-- Description -->
   @isset($description)
@@ -37,11 +37,11 @@ $user = Auth::user();
 
   <!-- Navbar -->
   <!-- Remove "fixed-top" class to make navigation bar scrollable with the page -->
-  <header class="sticky-top navbar navbar-expand-lg shadow-sm" style="background-color:#F1F1F1 !important">
+  <header class="sticky-top navbar navbar-expand-lg shadow-sm">
     <div class="container">
       @if(!Auth::check())
       <a href="/" class="navbar-brand">
-        LessTax
+        La gourmandise
       </a>
       @endif
       <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse2" aria-expanded="false">

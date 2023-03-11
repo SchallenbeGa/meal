@@ -1,17 +1,24 @@
 @extends('layouts.app')
 @section('content')
 @php
-$title = 'LessTax - Connexion';
+$title = 'a definir - Connexion';
 $description = 'Connectez-vous sur LessTax pour accéder à votre compte et à vos lettres de motivation';
 @endphp
-<div class="p-5 bg-size-cover bg-repeat-0 bg-position-center" style="background-image: url(/img/300.jpg);">
-  <div class="container shadow-sm d-flex flex-wrap justify-content-center h-100 pt-5" style="background-image: url(/img/301.jpg);">
-    <div class="w-100 align-self-end pt-1 pt-md-4 pb-4" style="max-width: 470px;">
-      <h1 class="text-center">Connectez-vous</h1>
-      <h4 class="text-center text-muted">En sécurité sur la plateforme de votre choix</h3>
-        @include('template.login_buttons')
+<section id="hero" class="hero d-flex align-items-center section-bg">
+    <div class="container">
+      <div class="row justify-content-between gy-5">
+        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+          <h2 data-aos="fade-up">Enjoy Your Healthy<br>Delicious Food</h2>
+          <p data-aos="fade-up" data-aos-delay="100">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="{{route('login')}}" class="btn-book-a-table">Commence maintenant !</a>
+          </div>
+        </div>
+        <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+          @include('template.login_buttons')
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+  </section><!-- End Hero Section -->
 @include('template.rrweb')
 @endsection

@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('ingredients');
             $table->string('calorie');
             $table->string('cost');
+            $table->string('pic_path');
             $table->unsignedBigInteger('user_id')->nullable();
             $table->timestamps();
         });

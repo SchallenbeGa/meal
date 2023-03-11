@@ -9,7 +9,7 @@
             <div class="card">
                 <div class="card-header"><h1>Conditions d'utilisation<h1></div>
                 <div class="card-body">
-                <p>Vous acceptez de ne pas tenir LessTax responsable de tout dommage ou perte résultant de l'utilisation des déclaration générées par ce site. Nous ne garantissons pas que les résultats seront acceptées par les destinataires. LessTax décline toute responsabilité pour toute erreur ou omission dans le contenu générées par ce site. Il est de la responsabilité de l'utilisateur de vérifier et de corriger toute erreur avant de soumettre le contenu.</p>
+                <p>Vous acceptez de ne pas tenir responsable de tout dommage ou perte résultant de l'utilisation des déclaration générées par ce site. Nous ne garantissons pas que les résultats seront acceptées par les destinataires. Gourmand décline toute responsabilité pour toute erreur ou omission dans le contenu générées par ce site. Il est de la responsabilité de l'utilisateur de vérifier et de corriger toute erreur avant de soumettre le contenu.</p>
                     <h3>Article 1 : Acceptation des conditions d'utilisation</h2>
                     <p>En utilisant ce site, vous acceptez de vous conformer à ces conditions d'utilisation. Si vous n'acceptez pas ces conditions d'utilisation, veuillez ne pas utiliser ce site. Nous nous réservons le droit de modifier ces conditions d'utilisation à tout moment et sans préavis. Il est de votre responsabilité de vous tenir informé de tout changement apporté aux conditions d'utilisation en consultant régulièrement cette page.</p>
                    

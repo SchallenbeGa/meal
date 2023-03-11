@@ -17,7 +17,6 @@ return new class extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('description');
-            $table->string('calorie');
             $table->string('cost');
             $table->timestamps();
         });

@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\BlogwygController;
 use App\Http\Controllers\Admin\GestionController;
 use App\Http\Controllers\Conseiller\CController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MealController;
 use App\Http\Controllers\SessionController;
 use Illuminate\Support\Facades\Route;
 use HTMLMin\HTMLMin\Facades\HTMLMin;
@@ -82,45 +83,24 @@ Route::middleware("auth")->group(function () {
 
     Route::get('/profil', [ProfilController::class, 'Profil'])->name('profil');
     Route::post('/profil/update', [ProfilController::class, 'updateProfil'])->name('update.profil');
-    Route::post('/rmr', [ProfilController::class, 'setup1'])->name('setup1');
-    Route::post('/info', [ProfilController::class, 'setup2'])->name('setup2');
-    Route::post('/goal', [ProfilController::class, 'setup3'])->name('setup3');
-    Route::post('/allergie', [ProfilController::class, 'setup4'])->name('setup4');
+    Route::get('/setup1', [ProfilController::class, 'setup1'])->name('setup1');
+    Route::get('/new-recipe', [MealController::class, 'create_recipe'])->name('new_recipe');
+    Route::post('/new-recipe', [MealController::class, 'save_recipe'])->name('save_recipe');
+    Route::get('/setup2', [ProfilController::class, 'setup2'])->name('setup2');
+    Route::get('/setup3', [ProfilController::class, 'setup3'])->name('setup3');
+    Route::get('/allergie', [ProfilController::class, 'allergie'])->name('allergie');
+
     Route::post('/profil/update/picture', [ProfilController::class, 'updateProfilePicture'])->name('update.profil.picture');
 
-    // Billing and get invoice  
     Route::get('/profil/billing', [ProfilController::class, 'showBillingHistory'])->name('billing');
-
 
     Route::get('/gestion', [GestionController::class, 'show_gestion'])->name('gestion');
     Route::get('/edit_blog', [BlogwygController::class, 'edit_blog'])->name('blog_edit');
-   
-    Route::get('/billing-portal', function (Request $request) {
-        return $request->user()->redirectToBillingPortal();
-    });
-    Route::get('/mailbox', [CController::class, 'mailbox'])->name('mailbox');
-    Route::get('/tasks', [CController::class, 'tasks'])->name('tasks');
-
-   
+    Route::post('/upload-image',[MealController::class, 'storeImage'])->name('image.store');
     Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
     Route::post('destroy', [ProfilController::class, 'destroy'])->name('delete_account');
     Route::post('/profil/cancel-subscription', [ProfilController::class, 'cancelPlan'])->name('plan.cancel');
-
-    Route::post('/situation/update', [ProfilController::class, 'updateCareer'])->name('update.situation');
-    // Afficher job actuel de l'utilisateur
-    Route::get('/situation', [ProfilController::class, 'showCareerView'])->name('show.situation');
-    Route::get('/chat', function (Request $request) {
-        return HTMLMin::blade(view('user.chat'));
-    })->name('chat');
-    Route::get('/answer', function (Request $request) {
-        return HTMLMin::blade(view('chat'));
-    })->name('answer');
-    // Wanted job routes
-    Route::get('/wanted-jobs', [ProfilController::class, 'showWantedJob'])->name('wanted_job.list');
-    Route::match(['post', 'get'], '/wanted-jobs/create', [ProfilController::class, 'createWantedJob'])->name('wanted_job.create');
-    Route::post('/wanted-jobs/edit/{wanted_job}', [ProfilController::class, 'editWantedJob'])->name('wanted_job.edit');
-    Route::post('/wanted-jobs/delete/{wanted_job}', [ProfilController::class, 'deleteWantedJob'])->name('wanted_job.delete');
-    // Route pour accéder au portail de facturation
+   
     Route::get('/billing-portal', function (Request $request) {
         return $request->user()->redirectToBillingPortal();
     })->name('biling');

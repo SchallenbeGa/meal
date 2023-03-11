@@ -12,10 +12,26 @@
           <i class="bx bx-chevron-down fs-lg ms-1"></i>
         </button>
         <div id="account-menu" class="list-group list-group-flush collapse d-md-block">
+        <a href="{{route('new_recipe')}}" class="list-group-item list-group-item-action d-flex align-items-center {{ Route::is('new_recipe') ? 'active' : '' }}">
+            <i class="bx bx-cog fs-xl opacity-60 me-2"></i>
+            ajout recette
+          </a>
+          <a href="{{route('setup1')}}" class="list-group-item list-group-item-action d-flex align-items-center {{ Route::is('setup1') ? 'active' : '' }}">
+            <i class="bx bx-cog fs-xl opacity-60 me-2"></i>
+            setup (debug)
+          </a>
+          <a href="{{route('allergie')}}" class="list-group-item list-group-item-action d-flex align-items-center {{ Route::is('allergie') ? 'active' : '' }}">
+            <i class="bx bx-cog fs-xl opacity-60 me-2"></i>
+            Allergie (debug)
+          </a>
+          <hr>
           <a href="{{route('profil')}}" class="list-group-item list-group-item-action d-flex align-items-center {{ Route::is('profil') ? 'active' : '' }}">
             <i class="bx bx-cog fs-xl opacity-60 me-2"></i>
             Compte
           </a>
+        
+         
+         
           <a href="{{route('planning')}}" class="list-group-item list-group-item-action d-flex align-items-center {{ Route::is('planning') ? 'active' : '' }}">
             <i class="bx bx-cog fs-xl opacity-60 me-2"></i>
             Planning
@@ -24,7 +40,6 @@
             <i class="bx bx-cog fs-xl opacity-60 me-2"></i>
             Recettes/Repas
           </a>
-          <hr>
           <a href="{{route('billing')}}" class="list-group-item list-group-item-action d-flex align-items-center {{ Route::is('billing') ? 'active' : '' }}">
             <i class="bx bx-receipt fs-xl opacity-60 me-2"></i>
             Factures ?

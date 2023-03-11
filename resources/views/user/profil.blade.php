@@ -2,7 +2,7 @@
 
 @section('content')
       <!-- Page content -->
-      <section class="container pt-5">
+      <section data-aos="fade-up" class="container gy-4">
         <div class="row">
 
   
