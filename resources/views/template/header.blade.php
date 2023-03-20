@@ -23,7 +23,6 @@ $user = Auth::user();
   <link sizes="180x180" href="{{ asset('img/favicon.png') }}">
   <script src="../assets/bootstrap.bundle.min.js"></script>
   <script src="../assets/jquery.min.js"></script>
-  <link href="../img/favicon.png" rel="icon">
   <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
   <link href="../css/aos.css" rel="stylesheet">
   <link href="../css/normalize.css" rel="stylesheet">

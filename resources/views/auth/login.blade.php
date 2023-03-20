@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.setup')
 @section('content')
 @php
 $title = 'a definir - Connexion';
@@ -11,7 +11,7 @@ $description = 'Connectez-vous sur LessTax pour accéder à votre compte et à v
           <h2 data-aos="fade-up">Enjoy Your Healthy<br>Delicious Food</h2>
           <p data-aos="fade-up" data-aos-delay="100">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="{{route('login')}}" class="btn-book-a-table">Commence maintenant !</a>
+
           </div>
         </div>
         <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">

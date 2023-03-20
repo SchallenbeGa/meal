@@ -17,7 +17,7 @@
                     {{ session('error') }}
                 </div>
                 @endif
-                <form method="POST" action="{{ route('image.store') }}" enctype="multipart/form-data">
+                <form method="POST" id="store_img" action="{{ route('image.store') }}" enctype="multipart/form-data">
                     <input type="hidden" name="user_id" value="{{ auth()->id() }}">
                     @csrf
                     <div class="col-sm-6 mb-4">
@@ -82,5 +82,34 @@
     </div>
 </section>
 </main>
+<script>
+    $(document).ready(function (e) {
+    $('#store_img').on('submit',(function(e) {
+        e.preventDefault();
+        var formData = new FormData(this);
+        
+        $.ajax({
+            type:'POST',
+            url: $(this).attr('action'),
+            data:formData,
+            cache:false,
+            contentType: false,
+            processData: false,
+            success:function(data){
+                console.log("success");
+                console.log(data);
+            },
+            error: function(data){
+                console.log("error");
+                console.log(data);
+            }
+        });
+    }));
+
+    $("#file-input").on("change", function() {
+        $("#imageUploadForm").submit();
+    });
+});
+</script>
 @include('template.rrweb')
 @endsection
