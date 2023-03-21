@@ -163,11 +163,21 @@ $title = 'Gourmandise !';
           
                       <div class="tab-header text-center">
                         <p>Menu</p>
-                        <h3>Starters</h3>
+                        <h3>Casse croute</h3>
                       </div>
           
                       <div class="row gy-5">
-          
+                        <div class="col-lg-4 menu-item">
+                          <a href="img/menu/menu-item-1.png" class="glightbox"><img src="../img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
+                          <h4>Magnam Tiste</h4>
+                          <p class="ingredients">
+                            Lorem, deren, trataro, filede, nerada
+                          </p>
+                          <p class="price">
+                            $5.95
+                          </p>
+                        </div><!-- Menu Item -->
+                        
                         <div class="col-lg-4 menu-item">
                           <a href="img/menu/menu-item-1.png" class="glightbox"><img src="../img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
                           <h4>Magnam Tiste</h4>
@@ -197,7 +207,7 @@ $title = 'Gourmandise !';
 
             <div class="tab-header text-center">
               <p>Menu</p>
-              <h3>Breakfast</h3>
+              <h3>Déjeuner</h3>
             </div>
 
             <div class="row gy-5">
@@ -243,7 +253,7 @@ $title = 'Gourmandise !';
 
             <div class="tab-header text-center">
               <p>Menu</p>
-              <h3>Lunch</h3>
+              <h3>Costaud</h3>
             </div>
 
             <div class="row gy-5">
@@ -321,7 +331,7 @@ $title = 'Gourmandise !';
 
             <div class="tab-header text-center">
               <p>Menu</p>
-              <h3>Dinner</h3>
+              <h3>Avant l'dodo</h3>
             </div>
 
             <div class="row gy-5">
