@@ -29,7 +29,7 @@ $user = Auth::user();
   <link href="../css/bootstrap.min.css" rel="stylesheet">
   <link href="../css/glightbox.min.css" rel="stylesheet">
   <link href="../css/swiper-bundle.min.css" rel="stylesheet">
-  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/app.css" rel="stylesheet">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 

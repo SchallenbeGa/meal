@@ -1,3 +1,16 @@
+/**
+* Template Name: gourmandise
+* Updated: Mar 10 2023 with Bootstrap v5.2.3
+* Template URL: https://bootstrapmade.com/gourmandise-bootstrap-restaurant-website-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# Set main reusable colors and fonts using CSS variables
+# Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+--------------------------------------------------------------*/
+/* Fonts */
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Amatic SC", sans-serif;
@@ -7,7 +20,7 @@
 /* Colors */
 :root {
   --color-default: #212529;
-  --color-primary: #ce1212;
+  --color-primary: #12ce22;
   --color-secondary: #37373f;
 }
 
@@ -123,7 +136,7 @@ section {
   content: "/";
 }
 
-@media (max-width: 992px) {
+@media (max-width: 540px) {
   .breadcrumbs .d-flex {
     display: block !important;
   }
@@ -222,7 +235,7 @@ section {
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 540px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
@@ -291,7 +304,7 @@ section {
 /*--------------------------------------------------------------
 # Desktop Navigation
 --------------------------------------------------------------*/
-@media (min-width: 1280px) {
+@media (min-width: 540px) {
   .navbar {
     padding: 0;
   }
@@ -419,7 +432,7 @@ section {
   }
 }
 
-@media (min-width: 1280px) and (max-width: 1366px) {
+@media (min-width: 540px) and (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
@@ -429,7 +442,7 @@ section {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 540px) {
 
   .mobile-nav-show,
   .mobile-nav-hide {
@@ -440,7 +453,7 @@ section {
 /*--------------------------------------------------------------
 # Mobile Navigation
 --------------------------------------------------------------*/
-@media (max-width: 1279px) {
+@media (max-width: 540px) {
   .navbar {
     position: fixed;
     top: 0;
@@ -772,6 +785,7 @@ section {
 # Stats Counter Section
 --------------------------------------------------------------*/
 
+
 @media (min-width: 1365px) {
   .stats-counter {
     background-attachment: fixed;
@@ -1082,7 +1096,6 @@ section {
   bottom: 0;
   height: 100%;
   width: 100%;
-  background: url(../img/team-shape.svg) no-repeat center bottom;
   background-size: contain;
   z-index: 1;
 }
@@ -1305,7 +1318,7 @@ section {
   text-align: center;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 540px) {
   .gallery .swiper-wrapper {
     padding: 40px 0;
   }
