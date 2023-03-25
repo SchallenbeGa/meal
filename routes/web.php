@@ -55,6 +55,9 @@ Route::get('/login', function () {
     return HTMLMin::blade(view('auth.login'));
 })->name('login');
 
+
+Route::get('/generator', [MealController::class, 'generator'])->name('generator');
+
 Route::get('/redirect/{provider}', [App\Http\Controllers\Auth\LoginController::class, 'redirectToProvider']);
 Route::get('/callback/{provider}', [App\Http\Controllers\Auth\LoginController::class, 'handleProviderCallback']);
 

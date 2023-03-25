@@ -37,7 +37,7 @@ class MealController extends Controller
         return HTMLMin::blade(view('user.recipe'));
     }
     public function storeImage(Request $request)
-    {
+    {   
         $request->validate([
             'image' => 'required|image|mimes:png,jpg,jpeg|max:2048'
         ]);
@@ -48,5 +48,15 @@ class MealController extends Controller
         $request->image->move(public_path('images'), $imageName);
 
         return back()->with('success', 'Image uploaded Successfully!')->with('image', $imageName);
+    }
+    public function generator()
+    {   
+        $firstquarter = array(
+            'title' => 'January',
+            '' => 'January',
+            '' => 'January',
+            '' => 'January'
+        );
+        return view('generator');
     }
 }
